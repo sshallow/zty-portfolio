@@ -49,6 +49,11 @@ export default function About() {
       display: about.technical.display,
       items: about.technical.skills.map((skill) => skill.title),
     },
+    {
+      title: about.certificates.title,
+      display: about.certificates.display,
+      items: about.certificates.items.map((cert) => cert.name),
+    },
   ];
   return (
     <Column maxWidth="m">
@@ -129,7 +134,7 @@ export default function About() {
                 vertical="center"
               >
                 <Icon paddingLeft="12" name="calendar" onBackground="brand-weak" />
-                <Flex paddingX="8">Schedule a call</Flex>
+                <Flex paddingX="8">预约面试</Flex>
                 <IconButton
                   href={about.calendar.link}
                   data-border="rounded"
@@ -310,6 +315,26 @@ export default function About() {
                         ))}
                       </Flex>
                     )}
+                  </Column>
+                ))}
+              </Column>
+            </>
+          )}
+
+          {about.certificates.display && (
+            <>
+              <Heading as="h2" id={about.certificates.title} variant="display-strong-s" marginBottom="m">
+                {about.certificates.title}
+              </Heading>
+              <Column fillWidth gap="l" marginBottom="40">
+                {about.certificates.items.map((cert, index) => (
+                  <Column key={`${cert.name}-${index}`} fillWidth gap="4">
+                    <Text id={cert.name} variant="heading-strong-l">
+                      {cert.name}
+                    </Text>
+                    <Text variant="heading-default-xs" onBackground="neutral-weak">
+                      {cert.description}
+                    </Text>
                   </Column>
                 ))}
               </Column>
