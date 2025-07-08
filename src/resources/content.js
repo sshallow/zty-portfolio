@@ -9,7 +9,7 @@ const person = {
     role: "课程与教学论硕士研究生",
     avatar: "/images/photo/IMG_9956.JPG",
     email: "zhengtianyi@example.com",
-    phone: "18435186421",
+    phone: "15633603951",
     location: "河北", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
     languages: ["中文", "English"], // optional: Leave the array empty if you don't want to display languages
 };
