@@ -8,7 +8,7 @@ const person = {
     },
     role: "课程与教学论硕士研究生",
     avatar: "/images/photo/IMG_9956.JPG",
-    email: "zhengtianyi@example.com",
+    email: "2845895318@qq.com",
     phone: "15633603951",
     location: "河北", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
     languages: ["中文", "English"], // optional: Leave the array empty if you don't want to display languages
@@ -23,11 +23,11 @@ const newsletter = {
 const social = [
     // Links are automatically displayed.
     // Import new icons in /once-ui/icons.ts
-    {
-        name: "LinkedIn",
-        icon: "linkedin",
-        link: "https://www.linkedin.com/in/zhengtianyi",
-    },
+    // {
+    //     name: "LinkedIn",
+    //     icon: "linkedin",
+    //     link: "https://www.linkedin.com/in/zhengtianyi",
+    // },
     {
         name: "Email",
         icon: "email",
@@ -35,7 +35,7 @@ const social = [
     },
     {
         name: "Phone",
-        icon: "email",
+        icon: "phone",
         link: `tel:${person.phone}`,
     },
 ];
@@ -58,7 +58,7 @@ const home = {
     },
     subline: (
         <>
-            我是郑天一，辽宁师范大学课程与教学论专业硕士研究生，专注于教育理论与实践的结合。
+            我是郑天一，辽宁师范大学课程与教学论专业硕士研究生，中共党员，专注于教育理论与实践的结合。
             <br />
             致力于成为一名优秀的教育工作者，用专业知识和创新思维推动教育发展。
         </>
@@ -87,8 +87,8 @@ const about = {
         description: (
             <>
                 郑天一，辽宁师范大学课程与教学论专业硕士研究生，中共党员，具有扎实的教育理论基础和丰富的实践经验。
-                在校期间担任班长、党支部宣传员等职务，具备优秀的组织协调能力和团队合作精神。
-                持有教师资格证，对教育事业充满热情，致力于通过创新教学方法提升学生学习效果。
+                本科毕业于唐山师范学院小学教育专业，研究生期间担任办公室部长、党支部宣传委员等职务，具备优秀的组织协调能力和团队合作精神。
+                持有小学语文教师资格证、普通话一乙证书，对教育事业充满热情，致力于通过创新教学方法提升学生学习效果。
             </>
         ),
     },
@@ -99,50 +99,61 @@ const about = {
             {
                 company: "辽宁师范大学",
                 timeframe: "2022.9 - 2025.6",
-                role: "课程与教学论硕士研究生",
+                role: "课程与教学论专业硕士研究生",
                 achievements: [
-                    <>深入研究课程设计与教学理论，参与多项教育研究项目，发表学术论文2篇。</>,
-                    <>担任班长职务，组织班级活动，协调师生关系，获得"优秀学生干部"称号。</>,
-                    <>担任党支部宣传员，负责党建工作宣传，组织主题党日活动，获得"优秀党员"称号。</>,
+                    <>担任办公室部长，协调主席团及6个部门日常事务，组织记录30+场研究生会议，逐步优化跨部门沟通流程。</>,
+                    <>担任研究生第二党支部宣传委员，负责党支部宣传工作，搭建支部多渠道宣传教育平台，提升党员思想意识和组织凝聚力。</>,
+                    <>获得全国大学生技术创新创业大赛一等奖、第五届525"心上的中国"心理与研学设计大赛一等奖、校级讲课大赛二等奖等荣誉。</>,
                 ],
                 images: [
                     // optional: leave the array empty if you don't want to display images
                     {
                         src: "/images/photo/IMG_9955.JPG",
-                        alt: "辽宁师范大学",
+                        alt: "辽宁师范大学研究生生活",
                         width: 16,
                         height: 9,
                     },
                 ],
             },
             {
-                company: "辽宁师范大学",
+                company: "唐山师范学院",
                 timeframe: "2018.9 - 2022.6",
-                role: "教育学学士",
+                role: "小学教育专业本科生",
                 achievements: [
-                    <>系统学习教育学基础理论，掌握教育心理学、课程论、教学论等核心知识。</>,
-                    <>参与教育实习，在中学进行教学实践，获得优秀实习生称号。</>,
-                    <>获得校级奖学金3次，专业排名前10%，具备扎实的专业基础。</>,
+                    <>担任班长、教务处学生助理，负责统筹班级日常事务，策划组织百余场学术交流、实践分享活动。</>,
+                    <>带领班级连续三年获得"校级优秀班集体"荣誉，协助教务处完成教学计划制定，处理500+人次课程报名及成绩录入工作。</>,
+                    <>获得国家励志奖学金3次、河北省优秀毕业生、唐山市优秀毕业生、校级一等奖学金2次、优秀学生干部3次等荣誉。</>,
                 ],
-                images: [],
+                images: [
+                    {
+                        src: "/images/photo/IMG_9954.JPG",
+                        alt: "唐山师范学院本科生活",
+                        width: 16,
+                        height: 9,
+                    },
+                ],
             },
         ],
     },
     studies: {
         display: true, // set to false to hide this section
-        title: "学术成果",
+        title: "实践经历",
         institutions: [
             {
-                name: "教育创新研究论文",
-                description: <>发表《基于核心素养的课程设计研究》等学术论文2篇。</>,
+                name: "东北特钢职业技术学院",
+                description: <>2024.03-2024.07担任代课教师，教授《普通话》和《模拟导游》两门课程，学生课程通过率100%。</>,
             },
             {
-                name: "教育竞赛获奖",
-                description: <>获得全国大学生教育创新竞赛二等奖，省级教学技能大赛三等奖。</>,
+                name: "涵毅考研教育",
+                description: <>2022.06-2023.06担任考研辅导老师，整理高频考点350+，提供院校选择、复试规划等1对1指导。</>,
             },
             {
-                name: "奖学金荣誉",
-                description: <>连续三年获得校级奖学金，获得"优秀毕业生"称号。</>,
+                name: "朝阳教育",
+                description: <>2018-2021年暑假担任辅导老师，进行小学、初中全科教学，累计教授学生人次150+。</>,
+            },
+            {
+                name: "一对一辅导",
+                description: <>利用本、研期间课余时间进行一对一辅导，累计授课300+学时，覆盖小学语文等6门学科，帮助30+学生提升成绩。</>,
             },
         ],
     },
@@ -152,17 +163,17 @@ const about = {
         skills: [
             {
                 title: "教学设计与实施",
-                description: <>熟练掌握课程设计理论，能够根据学生特点设计个性化教学方案，运用多种教学方法提升教学效果。</>,
+                description: <>熟练掌握课程设计理论，能够根据学生特点制定个性化教学计划，运用多种教学方法提升教学效果。具备丰富的教学实践经验。</>,
                 // optional: leave the array empty if you don't want to display images
                 images: [
                     {
-                        src: "/images/photo/IMG_9954.JPG",
+                        src: "/images/photo/IMG_9953.JPG",
                         alt: "教学设计",
                         width: 16,
                         height: 9,
                     },
                     {
-                        src: "/images/photo/IMG_9953.JPG",
+                        src: "/images/photo/IMG_9952.JPG",
                         alt: "教学实施",
                         width: 16,
                         height: 9,
@@ -170,21 +181,21 @@ const about = {
                 ],
             },
             {
-                title: "教育技术应用",
-                description: <>熟练运用多媒体教学技术，掌握在线教学平台操作，能够制作高质量教学课件和教学视频。</>,
+                title: "计算机与外语能力",
+                description: <>熟练运用Microsoft Office办公软件、SPSS统计软件，英语六级水平，熟练进行英语读写译。</>,
                 // optional: leave the array empty if you don't want to display images
                 images: [
                     {
-                        src: "/images/photo/IMG_9952.JPG",
-                        alt: "教育技术",
+                        src: "/images/photo/IMG_9951.JPG",
+                        alt: "计算机技能",
                         width: 16,
                         height: 9,
                     },
                 ],
             },
             {
-                title: "学生管理与沟通",
-                description: <>具备丰富的学生管理经验，善于与学生、家长、同事沟通，能够有效处理教育教学中的各种问题。</>,
+                title: "组织管理与沟通",
+                description: <>具备丰富的学生管理经验，善于与学生、家长、同事沟通，能够有效处理教育教学中的各种问题。具备优秀的组织协调能力。</>,
                 images: [],
             },
         ],
@@ -194,16 +205,16 @@ const about = {
         title: "证书资质",
         items: [
             {
-                name: "教师资格证",
-                description: <>高中教师资格证，具备正式教学资质。</>,
+                name: "小学语文教师资格证",
+                description: <>具备正式教学资质，可以从事小学语文教学工作。</>,
             },
             {
-                name: "普通话等级证书",
-                description: <>普通话二级甲等，具备良好的语言表达能力。</>,
+                name: "普通话一乙证书",
+                description: <>普通话水平达到一乙等级，具备良好的语言表达能力。</>,
             },
             {
-                name: "计算机等级证书",
-                description: <>全国计算机等级考试二级，熟练运用办公软件。</>,
+                name: "英语六级证书",
+                description: <>英语水平达到六级，熟练进行英语读写译。</>,
             },
         ],
     },
@@ -236,43 +247,18 @@ const gallery = {
     // These are placeholder images, replace with your own
     images: [
         {
-            src: "/images/photo/IMG_9951.JPG",
+            src: "/images/photo/IMG_9950.JPG",
             alt: "教学实践",
             orientation: "horizontal",
         },
         {
-            src: "/images/photo/IMG_9950.JPG",
+            src: "/images/photo/IMG_9949.JPG",
             alt: "课堂互动",
             orientation: "horizontal",
         },
         {
-            src: "/images/photo/IMG_9949.JPG",
-            alt: "学生活动",
-            orientation: "horizontal",
-        },
-        {
             src: "/images/photo/IMG_9948.JPG",
-            alt: "教育研究",
-            orientation: "horizontal",
-        },
-        {
-            src: "/images/photo/IMG_9956.JPG",
-            alt: "个人风采",
-            orientation: "vertical",
-        },
-        {
-            src: "/images/photo/IMG_9955.JPG",
-            alt: "团队合作",
-            orientation: "vertical",
-        },
-        {
-            src: "/images/photo/IMG_9954.JPG",
-            alt: "学术交流",
-            orientation: "vertical",
-        },
-        {
-            src: "/images/photo/IMG_9953.JPG",
-            alt: "获奖时刻",
+            alt: "学生活动",
             orientation: "vertical",
         },
     ],
